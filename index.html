@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Basic 
+        console.log("task1");
+        let str=prompt("enter your string");
+        console.log("Uppercase string is",str.toUpperCase());
+        console.log("Lowercase string is",str.toLowerCase());
+        let a=str.split("").reverse().join("");
+        console.log("Reverse of string",a);
+        // user validation
+        console.log("task2");
+        let b=prompt("enter user name");
+        console.log(b.length);
+        if(b.length>=5 && b.length<=15){
+            console.log("Your have entered a valid name");   
+        }
+        else{
+            console.log("your entered is invaild name");    
+        }
+        // Email
+        console.log("task3");
+        let c=prompt("enter your first name");
+        let d=prompt("enter your last name");
+        console.log("Your email is ",c.concat(".",d,"@gmail.com"));
+        // word counter 
+        console.log("Task4");
+        let e=prompt("enter a sentance");
+        let f=e.split(" ");
+        console.log(f);        
+        console.log(f.length);
+        // palindrome 
+        console.log("Task5");
+        let g=prompt("enter a string for palindrome");
+        let h=g.split("").reverse().join("");
+        console.log(h);
+        if(g==h){
+            console.log("String is a palindrome");
+        }
+        else{
+            console.log("String is not a palindrome");
+            
+        }
+        
+        
+
+        
+
+    
+        
+        
+
+
+    </script>
+</body>
+</html>
